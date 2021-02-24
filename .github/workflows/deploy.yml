@@ -13,7 +13,7 @@ jobs:
       with:
         host: 100.104.0.105
         username: pi
-        key: ${{ secrets.IPM_SECRET }}
+        password: ${{ secrets.PI_PASSWD }}
         port: 22
         script: |
           cd /var/www/html/ipm
