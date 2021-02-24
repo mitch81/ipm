@@ -15,7 +15,7 @@ jobs:
         username: pi
         password: ${{ secrets.IPM_SECRET }}
         port: 22
-        command_timeout: 200m
+        timeout: 120s
         script: |
           cd /var/www/html/ipm
           git pull origin master
