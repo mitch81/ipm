@@ -11,9 +11,9 @@ jobs:
     - name: executing remote ssh commands
       uses: appleboy/ssh-action@master
       with:
-        host: 100.104.0.105
+        host: ${{ secrets.HOST_SECRET }}
         username: pi
-        password: 1234
+        key: ${{ secrets.IPM_SECRET }}
         port: 22
         script: |
           cd /var/www/html/ipm
