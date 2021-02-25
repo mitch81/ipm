@@ -12,9 +12,9 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST_SECRET }}
-        username: pi
+        username: ${{ secrets.USER_SECRET }}
         key: ${{ secrets.IPM_SECRET }}
-        port: 22
+        port: ${{ secrets.PORT_SECRET }}
         script: |
           cd /var/www/html/ipm
           git pull origin master
