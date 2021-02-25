@@ -14,7 +14,7 @@ jobs:
         host: ${{ secrets.HOST_SECRET }}
         username: ${{ secrets.USER_SECRET }}
         key: ${{ secrets.IPM_SECRET }}
-        port: ${{ secrets.PORT_SECRET }}
+        port: 22
         script: |
           cd /var/www/html/ipm
           git pull origin master
