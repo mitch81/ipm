@@ -14,6 +14,7 @@ jobs:
         host: ${{ secrets.HOST_SECRET }}
         username: ${{ secrets.USER_SECRET }}
         key: ${{ secrets.IPM_SECRET }}
+        passphrase: ${{ secrets.PASSPHRASE }}
         port: ${{ secrets.PORT_SECRET }}
         script: |
           cd /var/www/html/ipm
